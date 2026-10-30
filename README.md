@@ -16,8 +16,12 @@ host is used automatically).
 
 ## Where things live
 
-- `src/app/page.tsx` — all sections (hero, how it works, features, code, security, closing band, footer)
-- `src/lib/site.ts` — repository links, tool list and every code snippet. Snippets mirror the repo's README,
+- `src/app/page.tsx` — all sections (hero, how it works, features, code, security, FAQ, closing band, footer)
+- `src/app/sitemap.ts` & `src/app/robots.ts` — automated sitemap and crawler discovery configs
+- `src/app/manifest.ts` & `src/app/apple-icon.tsx` — Web App Manifest and Apple Touch icon
+- `src/components/JsonLd.tsx` — Schema.org structured data (WebSite, SoftwareApplication, HowTo, FAQPage)
+- `src/components/Faq.tsx` — accessible, crawlable FAQ accordion
+- `src/lib/site.ts` — repository links, site metadata, tool list and every code snippet. Snippets mirror the repo's README,
   `examples/` and `src/fayda_mcp/cli.py`; re-check them when the library changes.
 - `src/components/HeroConsole.tsx` — the simulated agent flow in "How it works" (synthetic data, clearly labelled)
 - `src/components/CodeWindow.tsx` — editor-style code window with file tabs and copy

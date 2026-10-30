@@ -3,6 +3,7 @@ import { Brand, GitHubIcon } from "@/components/Brand";
 import { CodeWindow, type CodeFile } from "@/components/CodeWindow";
 import { CopyButton } from "@/components/CopyButton";
 import { RevealObserver } from "@/components/Effects";
+import { Faq } from "@/components/Faq";
 import { HeroConsole } from "@/components/HeroConsole";
 import { Nav } from "@/components/Nav";
 import { Critter, Scene } from "@/components/Scene";
@@ -157,6 +158,9 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ============ FAQ ============ */}
+        <Faq />
+
         {/* ============ CLOSING BAND ============ */}
         <section className="final" aria-labelledby="final-title">
           <Scene preset="highland" seed={31} sky={["#2a1f4f", "#5b3f7a", "#c06c84", "#f6b26b"]} sunX={0.5} sunY={0.5} />
@@ -175,6 +179,7 @@ export default function Home() {
         <div className="container foot">
           <Brand />
           <nav aria-label="Footer">
+            <a href="#faq">FAQ</a>
             <a href={links.repo} {...ext}>GitHub</a>
             <a href={links.pypi} {...ext}>PyPI</a>
             <a href={links.docs} {...ext}>Docs</a>

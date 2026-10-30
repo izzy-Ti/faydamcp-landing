@@ -10,6 +10,7 @@ const items = [
   { href: "#features", label: "Features" },
   { href: "#code", label: "Code" },
   { href: "#security", label: "Security" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 /** Transparent over the hero art (white type); becomes a sticky glass pill once the page scrolls. */

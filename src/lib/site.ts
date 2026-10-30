@@ -18,6 +18,62 @@ export const links = {
   example: (name: string) => `${BLOB}/examples/${name}.py`,
 };
 
+export const SITE_NAME = "Fayda MCP";
+export const SITE_TITLE = "Fayda MCP · Identity Verification, Built for AI Agents";
+export const SITE_DESCRIPTION =
+  "Open-source Python Model Context Protocol (MCP) server connecting AI agents to Ethiopia's Fayda national digital identity via eSignet. Verify citizen claims with privacy-preserving boolean predicates, PKCE OIDC, and offline QR verification.";
+
+export const SITE_KEYWORDS = [
+  "Fayda",
+  "Fayda MCP",
+  "Model Context Protocol",
+  "MCP server",
+  "Ethiopia Digital ID",
+  "Fayda eSignet",
+  "National ID Program Ethiopia",
+  "NIDP Ethiopia",
+  "AI agent KYC",
+  "Claude Desktop MCP",
+  "Cursor MCP",
+  "Identity verification AI",
+  "Privacy-preserving identity",
+  "Zero-knowledge identity predicates",
+  "Offline QR verification",
+  "eSignet OIDC",
+  "PKCE S256",
+  "MOSIP",
+  "Python MCP",
+  "FastAPI MCP",
+  "Agentic identity",
+];
+
+export const faqItems = [
+  {
+    q: "What is Fayda MCP?",
+    a: "Fayda MCP is an open-source Python toolkit and Model Context Protocol (MCP) server that connects AI assistants and agents (such as Claude Desktop, Cursor, and custom multi-agent systems) to Ethiopia's Fayda national digital ID platform via eSignet.",
+  },
+  {
+    q: "How does privacy-preserving identity verification protect citizen data?",
+    a: "LLM context windows should never hold unnecessary personally identifiable information (PII). Fayda MCP evaluates identity claims on the server and returns minimal boolean predicates (such as age_over_18: true) rather than raw personal details like names, dates of birth, or identification numbers.",
+  },
+  {
+    q: "Which AI agents and MCP clients are compatible?",
+    a: "Any AI tool or framework supporting Anthropic's Model Context Protocol can use Fayda MCP out of the box via stdio or HTTP/SSE transports. Supported environments include Claude Desktop, Cursor, Continue, LangChain, LlamaIndex, and custom agent runtimes.",
+  },
+  {
+    q: "How does offline Fayda QR code verification work?",
+    a: "Fayda MCP can cryptographically verify the digital signature embedded inside an Ethiopian Fayda QR code without contacting a network server. It validates the issuer signature against public certificates and confirms data integrity instantly.",
+  },
+  {
+    q: "What architecture and backend adapters does Fayda MCP support?",
+    a: "Built in modern Python (3.10+), Fayda MCP provides a headless core along with optional production adapters for FastAPI (REST/webhooks), Redis (fast distributed session storage), and PostgreSQL (AES-256-GCM encrypted persistence).",
+  },
+  {
+    q: "Is Fayda MCP officially affiliated with the National ID Program of Ethiopia?",
+    a: "No. Fayda MCP is an independent open-source community project distributed under the Apache-2.0 license. It integrates with standard Fayda and eSignet protocol specifications, but is not officially endorsed by NIDP.",
+  },
+];
+
 export const INSTALL = "pip install fayda-mcp";
 
 /* All snippets mirror the repository's README, examples/ and CLI (src/fayda_mcp/cli.py). */
