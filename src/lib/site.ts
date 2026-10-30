@@ -1,10 +1,10 @@
 const REPO = "https://github.com/izzy-Ti/fayda-mcp";
 const BLOB = `${REPO}/blob/main`;
 
-// Canonical/OG base URL: set NEXT_PUBLIC_SITE_URL once a domain exists; Vercel supplies its production host automatically.
+// Canonical/OG base URL: defaults to production custom domain, or uses environment variables if provided.
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "https://fayda-mcp.byisrael.tech");
 
 export const links = {
   repo: REPO,

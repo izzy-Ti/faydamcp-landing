@@ -11,8 +11,7 @@ npm run dev     # http://localhost:3000
 npm run lint && npx tsc --noEmit && npm run build
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` to the production origin for canonical and Open Graph URLs (on Vercel the production
-host is used automatically).
+The site defaults to `https://fayda-mcp.byisrael.tech`. Set `NEXT_PUBLIC_SITE_URL` to override the production origin if needed.
 
 ## Where things live
 
