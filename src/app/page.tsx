@@ -71,7 +71,6 @@ export default function Home() {
         <Critter name="butterfly" style={{ right: "8%", top: "50%" }} />
 
         <div className="sky-copy">
-          <span className="eyebrow-chip"><b>Apache-2.0</b> Open-source MCP for Fayda eSignet</span>
           <h1 className="sky-title split">
             <span className="w" style={{ "--i": 0 } as React.CSSProperties}>Ask in chat.</span>
             <br />
@@ -188,7 +187,7 @@ export default function Home() {
           </nav>
         </div>
         <div className="container foot-bot">
-          <span>© 2026 Fayda MCP Contributors · Apache-2.0</span>
+          <span>© 2026 Fayda MCP Contributors · Apache-2.0 · by <a href="https://israelashenafi.com" {...ext}>israelashenafi.com</a></span>
           <span>Not affiliated with or endorsed by the National ID Program of Ethiopia.</span>
         </div>
       </footer>
