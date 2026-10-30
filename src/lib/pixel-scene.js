@@ -409,7 +409,7 @@
       const cpal = (o.clouds || ["#fff6ea", "#f2cfb0", "#c7a6b4"]).map(hex);
       for (let i = 0; i < (tall ? 3 : 6); i++) {
         const cw = W * (tall ? 0.4 : 0.1 + R() * 0.12);
-        let cx = R() * W, cy = H * (0.05 + R() * 0.2);
+        let cx = R() * W, cy = H * (0.2 + R() * 0.12); // start below the fixed nav so it stays readable
         if (!tall && cy > H * 0.13 && Math.abs(cx - W / 2) < W * 0.3) cx = cx < W / 2 ? W * 0.12 * R() : W * (1 - 0.12 * R());
         cloud(b, cx, cy, cw, cw * 0.18, cpal, R, seed + i * 5);
       }
