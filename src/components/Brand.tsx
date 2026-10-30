@@ -1,10 +1,12 @@
-/** Fayda MCP mark: a butter disc holding a check that terminates in a signal node. */
+/** Fayda MCP "Relay F": an F whose short arm hands off to a detached dot (one bit back). Masters in public/brand. */
 export function BrandMark({ size = 26 }: { size?: number }) {
   return (
-    <svg viewBox="0 0 26 26" width={size} height={size} aria-hidden="true">
-      <circle cx="13" cy="13" r="12" fill="#ffe46b" />
-      <path d="M7.6 13.4l3.5 3.5 6.8-7" fill="none" stroke="#183d32" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-      <circle cx="18.6" cy="9.2" r="2" fill="#183d32" />
+    <svg viewBox="0 0 256 256" width={size} height={size} aria-hidden="true">
+      <rect width="256" height="256" rx="58" fill="#183d32" />
+      <g transform="translate(128 128) scale(.72) translate(-128 -126)">
+        <path d="M60 60A22 22 0 0 1 82 38H174A22 22 0 0 1 174 82H104V112H108A22 22 0 0 1 108 156H104V192A22 22 0 0 1 60 192Z" fill="#f7f9f5" />
+        <circle cx="174" cy="134" r="22" fill="#ffe46b" />
+      </g>
     </svg>
   );
 }
@@ -13,7 +15,7 @@ export function Brand({ href = "#top" }: { href?: string }) {
   return (
     <a className="brand" href={href} aria-label="Fayda MCP, back to top">
       <BrandMark />
-      fayda-mcp
+      Fayda MCP
     </a>
   );
 }

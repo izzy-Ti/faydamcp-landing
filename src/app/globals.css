@@ -98,7 +98,7 @@ code, pre { font-family: var(--font-mono); }
 .menu-sheet a { padding: 10px 14px; border-radius: 10px; font-size: 14px; }
 .menu-sheet a:hover { background: var(--paper); }
 
-.brand { display: inline-flex; align-items: center; gap: 9px; font-weight: 650; font-size: 22px; letter-spacing: -0.04em; color: inherit; flex: none; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 650; font-size: 22px; letter-spacing: -0.03em; color: inherit; flex: none; }
 .brand svg { width: 24px; height: 24px; flex: none; }
 
 /* ---------- pixel hero (one viewport, art inset from the page edge) ---------- */

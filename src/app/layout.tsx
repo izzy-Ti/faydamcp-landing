@@ -80,10 +80,6 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: ["/opengraph-image"],
   },
-  icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
-  },
   manifest: "/manifest.webmanifest",
 };
 
