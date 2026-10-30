@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fayda MCP — landing page
 
-## Getting Started
+Marketing site for [fayda-mcp](https://github.com/izzy-Ti/fayda-mcp), an independent open-source Python toolkit
+that connects MCP-compatible AI agents to Fayda eSignet identity verification.
 
-First, run the development server:
+Next.js 16 (App Router) · React 19 · Tailwind CSS v4 · lucide-react. Fully static; no backend.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
+npm run lint && npx tsc --noEmit && npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Set `NEXT_PUBLIC_SITE_URL` to the production origin for canonical and Open Graph URLs (on Vercel the production
+host is used automatically).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Where things live
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/page.tsx` — all sections (hero, how it works, features, code, security, closing band, footer)
+- `src/lib/site.ts` — repository links, tool list and every code snippet. Snippets mirror the repo's README,
+  `examples/` and `src/fayda_mcp/cli.py`; re-check them when the library changes.
+- `src/components/HeroConsole.tsx` — the simulated agent flow in "How it works" (synthetic data, clearly labelled)
+- `src/components/CodeWindow.tsx` — editor-style code window with file tabs and copy
+- `src/lib/pixel-scene.js` — procedural pixel-art scenes, vendored from the `pixel-meadow-ui` design skill
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+License: Apache-2.0 (matches the library's LICENSE file and PyPI metadata; the library README badge saying MIT is out of date).
