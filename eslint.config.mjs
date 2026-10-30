@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Vendored procedural art from the pixel-meadow-ui skill.
+    "src/lib/pixel-scene.js",
   ]),
 ]);
 
